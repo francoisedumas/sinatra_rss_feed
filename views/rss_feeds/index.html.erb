@@ -1,0 +1,7 @@
+<h1>RSS Feeds</h1>
+<ul>
+  <% @rss_feeds.each do |rss_feed| %>
+    <li><%= rss_feed['fields']['url'] %></li>
+  <% end %>
+</ul>
+<a href="/rss_feeds/new">Add a new feed</a>
